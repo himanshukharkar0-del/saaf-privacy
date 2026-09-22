@@ -5,60 +5,117 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Saaf Privacy Policy</title>
 <style>
-  :root { --bg: #ffffff; --text: #1b1d24; --muted: #5b6272; --accent: #6a4ae8; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #0e0f14; --text: #f4f5f8; --muted: #9aa1b0; --accent: #9d86ff; } }
+  :root { --bg: #ffffff; --text: #1b1d24; --muted: #5b6272; --accent: #6a4ae8; --line: #e3e5ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0e0f14; --text: #f4f5f8; --muted: #9aa1b0; --accent: #9d86ff; --line: #262a33; } }
   body { background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, sans-serif; margin: 0; padding: 32px 16px; }
   main { max-width: 680px; margin: 0 auto; }
   h1 { font-size: 28px; margin-bottom: 4px; }
   h2 { font-size: 19px; margin-top: 32px; }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
   p, li { color: var(--text); }
   .muted { color: var(--muted); }
   a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  code { font-size: 13px; overflow-wrap: anywhere; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Saaf Privacy Policy</h1>
-  <p class="muted">Last updated: 19 September 2026</p>
+<h1>Saaf Privacy Policy</h1>
+<p class="muted">Last updated: 22 September 2026</p>
 
-  <p><strong>Your photos never leave your device.</strong> We show ads, which share standard device
-  identifiers with Google — nothing else.</p>
+<p><strong>Everything Saaf looks at stays on your phone.</strong> Saaf has no server, no
+account and no analytics. The only data that leaves the device is what the Google ads in the free
+version send to Google, described under <a href="#advertising">Advertising</a>.</p>
 
-  <h2>What Saaf accesses</h2>
-  <p>With your permission, Saaf reads the photos and videos on your phone to show them as cards.
-  It reads file details (size, date, folder, dimensions) and creates small preview images and
-  similarity fingerprints. All of this is stored only on your device and is deleted when you
-  uninstall the app.</p>
-  <p>Photos and videos are accessed but never collected, uploaded or shared. Saaf has no server
-  and no account.</p>
+<h2>What Saaf accesses, and why</h2>
+<p>Each feature reads only what it needs, only after you open it, and only on this phone. None of
+it is collected, uploaded, sold or shared.</p>
 
-  <h2>Deleting files</h2>
-  <p>Saaf never deletes anything without your confirmation. Items you bin go to Android's own
-  trash, where you can restore them until they are permanently deleted (after up to 30 days, or
-  sooner if you empty the bin).</p>
+<h3>Photos, videos and audio</h3>
+<p>With your permission, Saaf reads your photos, videos and audio files to show them as cards you
+can keep or bin. It reads file details (name, size, date, folder, dimensions, length), plays
+videos and audio inside the card, and makes small preview images and similarity fingerprints to
+find duplicate photos. These details, previews and fingerprints are stored only on your device.</p>
 
-  <h2>Advertising</h2>
-  <p>The free version shows ads from Google AdMob. To serve and measure ads, the Google Mobile Ads
-  SDK collects your device's advertising ID, IP address, device model and approximate location, and
-  shares them with Google. See
-  <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from
-  apps that use its services</a>. Where required (for example in the EEA and UK), you are asked for
-  consent first and can change your choice under Settings → Ad privacy choices. You can also reset
-  or delete your advertising ID in Android settings.</p>
-  <p>If you buy "Remove ads", the ad SDK is not started at all and no advertising data is sent.</p>
+<h3>Documents and other files</h3>
+<p>To find large files, Saaf reads the folders you pick in Android's folder picker. If you also
+turn on "All files access" in Android settings, it can look through every folder on the phone,
+including Download. It reads file names, sizes, types, dates and folders. Opening a file hands it to
+an app of your choice on the phone.</p>
 
-  <h2>Purchases</h2>
-  <p>The one-time "Remove ads" purchase is processed by Google Play. Saaf only learns whether you
-  own it; it never sees your payment details.</p>
+<h3>Installed apps</h3>
+<p>The Unused apps screen lists the apps on your phone with their names, icons, install dates and
+the size of their installed files. If you choose to turn on "Usage access" in Android settings,
+Saaf also reads when each app was last opened and how much storage it uses, including data and
+cache. Apps are removed only through Android's own uninstall confirmation.</p>
 
-  <h2>Children</h2>
-  <p>Saaf is not directed at children under 13.</p>
+<h3>Contacts</h3>
+<p>With your permission, the Duplicate contacts screen reads your contacts' names, phone numbers,
+email addresses and the account each one is saved in, to find entries for the same person.
+Merging uses Android's own "link contacts": Saaf never deletes a contact, and you can unlink them
+again in your Contacts app.</p>
 
-  <h2>Your rights and contact</h2>
-  <p>Because Saaf holds no personal data on any server, there is nothing for us to access, correct
-  or delete on your behalf. For questions or grievances, including under India's Digital Personal
-  Data Protection Act, 2023, contact our grievance officer at
-  <a href="mailto:contact@locleo.com">contact@locleo.com</a>.</p>
+<h3>Device safety checkup</h3>
+<p>The safety checkup reads how your phone is set up: whether a screen lock is set, whether USB
+debugging or developer options are on, whether Google Play Protect is on, the date of the latest
+security update, the Android version, and common signs that the phone is rooted. For installed
+apps it reads which store installed them, which sensitive permissions they have been granted, and
+whether they can act as a device administrator, use accessibility services, install other apps or
+draw over other apps. No extra permission is needed for any of this.</p>
+
+<h3>Permissions</h3>
+<table>
+  <tr><th>Permission</th><th>Used for</th></tr>
+  <tr><td><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code></td><td>Showing your photos, videos and audio as cards</td></tr>
+  <tr><td><code>MANAGE_EXTERNAL_STORAGE</code> (optional)</td><td>Finding large files in every folder, not only the ones you pick</td></tr>
+  <tr><td><code>PACKAGE_USAGE_STATS</code> (optional)</td><td>Last-opened dates and full storage use of installed apps</td></tr>
+  <tr><td><code>REQUEST_DELETE_PACKAGES</code></td><td>Opening Android's uninstall confirmation for an app you choose</td></tr>
+  <tr><td><code>READ_CONTACTS</code>, <code>WRITE_CONTACTS</code></td><td>Finding duplicate contacts and linking them</td></tr>
+  <tr><td><code>INTERNET</code></td><td>Ads and Google Play purchases only</td></tr>
+</table>
+<p>You can withdraw any of these at any time in Android settings. The rest of the app keeps
+working.</p>
+
+<h2>Deleting things</h2>
+<p>Saaf never deletes anything without your confirmation. Photos, videos and audio you bin go to
+Android's own trash, where you can restore them until they are permanently deleted (after up to
+30 days, or sooner if you empty the bin). Documents you bin are moved to Saaf's own bin folder on
+the phone and stay there until you restore them or delete them for good.</p>
+
+<p>Everything Saaf stores is kept in its own app storage on your phone, including the index,
+previews, fingerprints, settings and Saaf's bin folder. It is all deleted when you uninstall
+Saaf.</p>
+
+<h2 id="advertising">Advertising</h2>
+<p>The free version shows ads from Google AdMob. To serve and measure ads, the Google Mobile Ads
+SDK collects your device's advertising ID, IP address, device model and approximate location, and
+shares them with Google. See
+<a href="https://policies.google.com/technologies/partner-sites">how Google uses information from
+apps that use its services</a>. Where required (for example in the EEA and UK), you are asked for
+consent first and can change your choice under Settings → Ad privacy choices. You can also reset
+or delete your advertising ID in Android settings.</p>
+<p>The ads never receive your photos, files, contacts or app list.</p>
+<p>If you buy "Remove ads", the ad SDK is not started at all and no advertising data is sent.</p>
+
+<h2>Purchases</h2>
+<p>The one-time "Remove ads" purchase is processed by Google Play, in your local currency. Saaf
+only learns whether you own it; it never sees your payment details.</p>
+
+<h2>Children</h2>
+<p>Saaf is not directed at children under 13.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a new version of Saaf accesses anything not listed here, this policy is updated first, and
+the date at the top changes.</p>
+
+<h2>Your rights and contact</h2>
+<p>Because Saaf holds no personal data on any server, there is nothing for us to access, correct
+or delete on your behalf. For questions or grievances, including under India's Digital Personal
+Data Protection Act, 2023, contact our grievance officer at
+<a href="mailto:contact@locleo.com">contact@locleo.com</a>.</p>
 </main>
 </body>
 </html>
